@@ -16,9 +16,6 @@ function addToCart(item) {
   return `${itemObject.itemName} has been added to your cart.`;
 }
 
-
-
-
   function viewCart() {
  // write your code here
   if (cart.length === 0){

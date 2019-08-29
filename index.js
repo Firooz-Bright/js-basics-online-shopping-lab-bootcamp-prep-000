@@ -21,7 +21,7 @@ function addToCart(item) {
   if (cart.length === 0){
     console.log('Your shopping cart is empty.')
   } else if (cart.length === 1){
-    var oneItem = `In your cart, you have ${cart[i].itemName} at $${Object.values(cart[0])}.`
+    var oneItem = `In your cart, you have ${cart[0].itemName} at $${Object.values(cart[0])}.`
     console.log(oneItem)
   } else if (cart.length === 2){
     var twoItems = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`

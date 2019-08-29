@@ -31,7 +31,7 @@ function addToCart(item) {
     for (var i = 0; i < cart.length-1; i++){
       cartData.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
 }
-    var threePlusItems = `In your cart, you have ${cartData.join(', ')}, and ${Object.keys(cart[cart.length-1])} at $${Object.values(cart[cart.length-1])}.`
+    var threePlusItems = `In your cart, you have ${cartData.join(', ')}, and ${cart[i].itemName} at $${Object.values(cart[cart.length-1])}.`
   }
   return threePlusItems
 }

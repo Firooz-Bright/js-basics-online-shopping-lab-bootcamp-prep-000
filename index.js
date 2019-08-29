@@ -24,7 +24,7 @@ function addToCart(item) {
     var oneItem = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
     return oneItem;
   } else if (cart.length === 2){
-    var twoItems = `In your cart, you have ${cart[0].itemName} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`
+    var twoItems = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice} and ${Object.keys(cart[1])} at $${cart[0].itemPrice}.`
     console.log(twoItems)
   } else {
     var cartData = []

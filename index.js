@@ -29,27 +29,22 @@ function viewCart() {
          
            myString+=`${cart[i].itemName} at $${cart[i].itemPrice}`;
            
-              if(i!==cart.length-1 &&cart.length!==1){
+              if(i!==cart.length-1 ){
                  
                   myString+=",";
                 }
-               
-                else if (i===cart.length-2){
-                 myString+= "and"
-                }
-                else {
-              
-                  myString+="."
-                  
-                }
+                else if (i===cart.length-2 && cart.length===2){
+                
+                myString+="and"
               }
-
-         
+                else{
+                  myString+="."
+                }
 
      return myString;
   }
 }
-
+}
 
 function total() {
   // write your code here
